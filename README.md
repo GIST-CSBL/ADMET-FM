@@ -30,24 +30,6 @@ uv run python -m ipykernel install --user --name admet-fm --display-name "ADMET-
 
 ## Repository structure
 
-```text
-.
-|-- finetuning_data/
-|   |-- Classification/
-|   `-- Regression/
-|-- pretraining_data/
-|   |-- train_profile.csv
-|   |-- valid_profile.csv
-|   `-- test_profile.csv
-|-- pre_trained_weights/
-|   `-- pt_weights.pth
-|-- finetuning_cls.py
-|-- finetuning_reg.py
-|-- Pre-training.ipynb
-|-- pyproject.toml
-`-- uv.lock
-```
-
 - `pretraining_data/`: Training, validation, and test datasets used for
   pre-training.
 - `finetuning_data/Classification/`: Classification datasets. Each task must
