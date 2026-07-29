@@ -66,10 +66,6 @@ uv run python -m ipykernel install --user --name admet-fm --display-name "ADMET-
 
 Start Jupyter from the repository root:
 
-```bash
-uv run --with jupyterlab jupyter lab
-```
-
 Open `Pre-training.ipynb`, select the `ADMET-FM` kernel, and run the cells in
 order. The notebook reads the three CSV files in `pretraining_data/`, trains the
 model, and writes the best model state to `pre_trained_weights/`.
