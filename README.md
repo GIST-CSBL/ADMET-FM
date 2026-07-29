@@ -92,6 +92,9 @@ uv run python finetuning_cls.py \
   --lr <LEARNING_RATE>
 ```
 
+To implement the example code for fine-tuning classification task run the following command
+> uv run python finetuning_cls.py --task_name=CYP2B6_Inhibitor
+
 ### Regression
 
 Edit the placeholders before running:
@@ -106,6 +109,9 @@ uv run python finetuning_reg.py \
   --random_seed <RANDOM_SEED> \
   --lr <LEARNING_RATE>
 ```
+
+To implement the example code for fine-tuning regression task run the following command
+> uv run python finetuning_reg.py --task_name=Fraction_unbound
 
 Set `--gpu_id` to `-1` to run fine-tuning on CPU.
 
