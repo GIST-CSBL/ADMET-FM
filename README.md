@@ -6,6 +6,13 @@ This repository provides the code, datasets, and pre-trained weights for ADMET-F
 It includes a Jupyter notebook for pre-training and Python scripts for
 classification and regression fine-tuning.
 
+Contact Info:
+
+15pms@gm.gist.ac.kr
+
+hojungnam@yonsei.ac.kr
+
+
 <br />
 
 ## Environment setup (uv)
