@@ -10,6 +10,11 @@ classification and regression fine-tuning.
 - **Pre-training:** ADMET-FM employs ChemBERTa-2 (`DeepChem/ChemBERTa-77M-MTR`) as its backbone architecture and learns molecular representations by integrating molecular structure and ADMET profile information.
 - **Downstream Applications:** Fine-tuning the pre-trained model for diverse ADMET classification and regression tasks.
 
+### Overview
+<p align="center">
+  <img src="figs/overview.png" width="800">
+</p>
+
 Contact Info:
 
 15pms@gm.gist.ac.kr
