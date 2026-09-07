@@ -6,6 +6,10 @@ This repository provides the code, datasets, and pre-trained weights for ADMET-F
 It includes a Jupyter notebook for pre-training and Python scripts for
 classification and regression fine-tuning.
 
+- **Purpose:** Molecular representation learning for accurate and generalizable ADMET property prediction.
+- **Pre-training:** Learning molecular representations by integrating molecular structure and ADMET profile information.
+- **Downstream Applications:** Fine-tuning the pre-trained model for diverse ADMET classification and regression tasks.
+
 Contact Info:
 
 15pms@gm.gist.ac.kr
@@ -53,6 +57,8 @@ uv run python -m ipykernel install --user --name admet-fm --display-name "ADMET-
 
 ## Pre-training
 
+During pre-training, ADMET-FM learns molecular representations by jointly leveraging molecular structure and ADMET profile information. The provided notebook reproduces the pre-training workflow, including data loading, model training, validation, and checkpoint selection.
+
 Start Jupyter from the repository root:
 
 Open `Pre-training.ipynb`, select the `ADMET-FM` kernel, and run the cells in
@@ -65,6 +71,8 @@ GPU or CPU should be used.
 <br />
 
 ## Fine-tuning
+
+The pre-trained ADMET-FM model can be adapted to downstream molecular property prediction tasks through supervised fine-tuning. Separate scripts are provided for binary classification and regression tasks.
 
 Fine-tuning uses `pre_trained_weights/pt_weights.pth`. Place each dataset under
 the appropriate task directory:
