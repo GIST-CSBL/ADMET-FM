@@ -97,6 +97,10 @@ finetuning_data/
 Each CSV file must contain a `smiles` column and the target column specified by
 `--col_name`.
 
+### Fine-tuning Data
+
+Due to repository size limitations, only example datasets are provided in `finetuning_data/`. If you need access to the full datasets used in our experiments, please contact us using the email addresses provided in the **Contact Info** section.
+
 ### Classification
 
 Edit the placeholders before running:
