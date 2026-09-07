@@ -12,7 +12,7 @@ classification and regression fine-tuning.
 
 ### Overview
 <p align="center">
-  <img src="figs/overview.png" width="800">
+  <img src="figs/Overview.png" width="800">
 </p>
 
 Contact Info:
