@@ -7,7 +7,7 @@ It includes a Jupyter notebook for pre-training and Python scripts for
 classification and regression fine-tuning.
 
 - **Purpose:** Molecular representation learning for accurate and generalizable ADMET property prediction.
-- **Pre-training:** Learning molecular representations by integrating molecular structure and ADMET profile information.
+- **Pre-training:** ADMET-FM employs ChemBERTa-2 (`DeepChem/ChemBERTa-77M-MTR`) as its backbone architecture and learns molecular representations by integrating molecular structure and ADMET profile information.
 - **Downstream Applications:** Fine-tuning the pre-trained model for diverse ADMET classification and regression tasks.
 
 Contact Info:
