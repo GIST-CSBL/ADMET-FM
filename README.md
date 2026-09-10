@@ -98,7 +98,7 @@ Each CSV file must contain a `smiles` column and the target column specified by
 `--col_name`.
 
 ### Access to the Full Fine-tuning Datasets
-Due to repository size limitations, only example datasets are currently provided in `finetuning_data/`. The complete fine-tuning datasets will be made publicly available once the external files are ready for public release.
+Due to repository size limitations, only example datasets are currently provided in `finetuning_data/`. Information on accessing the data required to reproduce our experiments will be updated once the external files for data sharing have been organized.
 
 In the meantime, if you need access to the full datasets used in our experiments, please contact us using the email addresses provided in the **Contact Info** section.
 
