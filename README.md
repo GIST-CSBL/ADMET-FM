@@ -46,12 +46,6 @@ uv run python -m ipykernel install --user --name admet-fm --display-name "ADMET-
 
 ## Repository structure
 
-- `pretraining_data/`: Training, validation, and test datasets used for
-  pre-training.
-- `finetuning_data/Classification/`: Classification datasets. Each task must
-  contain `train.csv`, `valid.csv`, and `test.csv`.
-- `finetuning_data/Regression/`: Regression datasets. Each task must contain
-  `train.csv`, `valid.csv`, and `test.csv`.
 - `pre_trained_weights/`: Pre-trained model weights used by the fine-tuning
   scripts.
 - `Pre-training.ipynb`: Jupyter notebook for model pre-training and evaluation.
@@ -118,7 +112,7 @@ uv run python finetuning_cls.py \
 ```
 
 To implement the example code for fine-tuning classification task run the following command
-> uv run python finetuning_cls.py --task_name=CYP2B6_Inhibitor
+> uv run python finetuning_cls.py --task_name="Task name"
 
 ### Regression
 
@@ -136,7 +130,7 @@ uv run python finetuning_reg.py \
 ```
 
 To implement the example code for fine-tuning regression task run the following command
-> uv run python finetuning_reg.py --task_name=Fraction_unbound
+> uv run python finetuning_reg.py --task_name="Task_name"
 
 Set `--gpu_id` to `-1` to run fine-tuning on CPU.
 
