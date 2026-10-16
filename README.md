@@ -64,6 +64,8 @@ Open `Pre-training.ipynb`, select the `ADMET-FM` kernel, and run the cells in
 order. The notebook reads the three CSV files in `pretraining_data/`, trains the
 model, and writes the best model state to `pre_trained_weights/`.
 
+The pre-training datasets are not included in this repository due to size limitations. Download 'pretrain_data' from [Zenodo](<link>) and place the three CSV files in 'pretraining_data' at the repository root before running the notebook. 
+
 The notebook currently selects `cuda:0`; edit the device cell if a different
 GPU or CPU should be used.
 
