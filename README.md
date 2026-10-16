@@ -64,7 +64,7 @@ Open `Pre-training.ipynb`, select the `ADMET-FM` kernel, and run the cells in
 order. The notebook reads the three CSV files in `pretraining_data/`, trains the
 model, and writes the best model state to `pre_trained_weights/`.
 
-The pre-training datasets are not included in this repository due to size limitations. Download 'pretrain_data' from [Zenodo](<link>) and place the three CSV files in 'pretraining_data' at the repository root before running the notebook. 
+The pre-training datasets are not included in this repository due to size limitations. Download 'pretraining_data' from [Zenodo](<link>) and place the three CSV files in 'pretraining_data' at the repository root before running the notebook. 
 
 The notebook currently selects `cuda:0`; edit the device cell if a different
 GPU or CPU should be used.
@@ -75,8 +75,9 @@ GPU or CPU should be used.
 
 The pre-trained ADMET-FM model can be adapted to downstream molecular property prediction tasks through supervised fine-tuning. Separate scripts are provided for binary classification and regression tasks.
 
-Fine-tuning uses `pre_trained_weights/pt_weights.pth`. Place each dataset under
-the appropriate task directory:
+Fine-tuning uses `pre_trained_weights/pt_weights.pth`. 
+
+To reproduce our experiments, download 'finetuning_data' from [Zenodo](<link>) and place it at the repository root. After downloading, the datasets are organized by task as follows:
 
 ```text
 finetuning_data/
@@ -90,12 +91,7 @@ finetuning_data/
     `-- test.csv
 ```
 
-Each CSV file must contain a `smiles` column and the target column specified by
-`--col_name`.
-
-### Access to the Full Fine-tuning Datasets
-To reproduce our experiments, download 'finetune_data' from [Zenodo](<link>) and place at the repository root. 
-
+Each CSV file must contain a `smiles` column and the target column specified by `label`.
 
 ### Classification
 
